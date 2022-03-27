@@ -84,12 +84,12 @@ namespace GameController.Controllers
             {
                 if (name == null || price < 0 || rating < 0 || !DataService.GetGenres().Any(y => y.Id == genre) || !DataService.GetPublishers().Any(y => y.Id == publisher) || !DataService.GetPlatforms().Any(y => y.Id == platform))
                 {
-                    Console.WriteLine(name);
+                    /*Console.WriteLine(name);
                     Console.WriteLine(price);
                     Console.WriteLine(rating);
                     Console.WriteLine(genre);
                     Console.WriteLine(publisher);
-                    Console.WriteLine(platform);
+                    Console.WriteLine(platform);*/
                     return RedirectToAction(actionName: "Index", controllerName: "Error");
                 }
                 DataService.EditGame(id, name, platform, rating, publisher, genre, isMultiplayer, price);

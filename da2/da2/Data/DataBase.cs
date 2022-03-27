@@ -5,7 +5,6 @@ namespace da2.Data
     public static class DataBase
     {
         private const string ConnectionString = "Server=localhost;Database=da2;Uid=root;Pwd=Mindil12345;";
-        // Mahaite parolata 
 
         static DataBase()
         {
